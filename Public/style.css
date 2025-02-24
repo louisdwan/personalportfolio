@@ -170,6 +170,16 @@ footer {
   background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
 }
 
+footer .col-sm-4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .col-sm-4 p, footer .footer-content img {
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+
 footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
@@ -211,7 +221,23 @@ footer li{
   }
 }
 
+/* Projects */
+.project-row {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.project-img {
+    width: 300px; /* Fixed width for all project images */
+    height: auto; /* Maintain aspect ratio */
+}
 
-
-
-
+.project-row figure {
+    flex: 0 0 auto; /* Prevent figures from shrinking */
+    text-align: center;
+    margin-bottom: 0;
+}
