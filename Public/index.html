@@ -1,49 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Personal Portfolio - Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css" />
-    <link href="style.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="container mt-3">
-      <div class="row align-items-center">
-        <h1 class="col-sm-6">Louis Dwan</h1>
-        <nav class="col-sm-6 text-right">
-          <a href="index.html" class="mx-2">Home</a>
-          <a href="about.html" class="mx-2">About Me</a>
-          <a href="education.html" class="mx-2">Education</a>
-          <a href="experience.html" class="mx-2">Experience</a>
-        </nav>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis' Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Louis</h1>
+                </div>
+                <div class="col-md-8">
+                    <nav>
+                      <a href="index.html" class="mx-2">Home</a>
+                      <a href="about.html" class="mx-2">About Me</a>
+                      <a href="education.html" class="mx-2">Education</a>
+                      <a href="experience.html" class="mx-2">Experience</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Jumbotron Section -->
-    <section class="jumbotron text-center mt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <h2>Welcome to My Portfolio</h2>
-            <h3>Project Manager | NetSuite | Coupa | Workday</h3>
-          </div>
+    <section class="jumbotron">
+        <div class="container">
+            <h2>Hello, I'm Louis</h2>
+            <h3>BSA / Project Manager</h3>
+            <button class="btn btn-primary">Contact me</button>
         </div>
-      </div>
     </section>
 
-    <footer class="container text-center mt-4">
-      <p>&copy; 2025 Louis Dwan.</p>
-      <div class="d-flex justify-content-center">
-        <a href="https://github.com/louisdwan" target="_blank" class="mx-2">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="30" height="30">
-        </a>
-        <a href="https://www.linkedin.com/in/louis-dwan-7a37195a/" target="_blank" class="mx-2">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
-        </a>
+    <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h2>About me</h2>
+                  <p>ERP Implementation, Optimizing System Performance, Strategy</p>
+                  <button class="btn btn-secondary">Learn More</button>
+              </div>
+              <div class="col-md-6">
+                  <figure class="portrait-container">
+                      <img src="./resources/images/profilepic.JPEG" alt="Portrait" class="portrait img-fluid">
+                  </figure>
+              </div>
+          </div>
       </div>
+  </section>
+
+
+    <section>
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <img src="./resources/images/floorspaceestimate.jpg" alt="Project 1">
+                        <figcaption>Floor Space Estimator</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                        <figcaption>Project 2 Description</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                        <figcaption>Project 3 Description</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>&copy; 2023 Louis</p>
+                </div>
+                <div class="col-sm-8">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -1,106 +1,217 @@
+/* General Styles */
 body {
-    font-family: Roboto, sans-serif;
-    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
-  }
-  
-  header {
-    padding: 20px 0;
-  }
-  
-  header .row,
-  footer .row {
-    display: flex;
-    align-items: center;
-  }
-  
-  h1 {
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  a {
-    padding: 0 20px;
-    margin: 0;
-  }
-  
+  font-family: Roboto, sans-serif;
+  background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+  background-repeat: repeat; /* Added to ensure the background image tiles properly */
+  color: #333; /*Added a default color*/
+}
+
+/* Header */
+header {
+  padding: 30px 0; /* Increased padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+/* Headings */
+h1 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 2.5rem; /* Increased size */
+  color: #2a70e0; /*Set a clear color for the h1*/
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2a70e0; /*Set a clear color for the h2*/
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #2a70e0; /*Set a clear color for the h3*/
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav a {
+  padding: 10px 20px; /* Increased padding */
+  margin: 0;
+  text-decoration: none; /* Remove underlines */
+  color: #333; /* Default link color */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a:hover {
+  color: #2a70e0; /* Hover color */
+  text-decoration: underline;
+}
+
+/* Jumbotron */
+.jumbotron {
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-image: url('/Public/resources/images/iStock-1327449500.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 400px;
+  padding: 20px; /* Add some padding */
+  text-align: center; /* center text */
+}
+
+.jumbotron h2 {
+  font-size: 3rem; /* Improved size */
+  font-weight: 700;
+  margin: 0 0 10px; /* Added margin-bottom */
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+/* Section Styles */
+section {
+  padding: 30px 0; /* Increased padding */
+}
+
+section .row {
+  margin-bottom: 30px; /*Add a margin to the rows*/
+}
+
+section .row img {
+  width: 100%;
+  margin-bottom: 15px; /*Reduce margin*/
+}
+
+.col-md-6 {
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px; /*Increased the padding*/
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition */
+}
+
+.btn.btn-primary {
+  background-color: #2a70e0; /* Changed to blue */
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+}
+
+.btn.btn-primary:hover {
+  background-color: #1e5bb9; /* Darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Increased the shadow on hover*/
+}
+
+.btn-secondary {
+  background-color: #fbd1d5;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+}
+
+.btn-secondary:hover {
+  background-color: #f9b8c0; /*Darker pink on hover*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Increased the shadow on hover*/
+}
+
+/* Portrait Image */
+.portrait {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.portrait-container{
+  width: 100%;
+}
+
+/* Image in figures */
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  font-size: 1rem; /*Increased the font size*/
+  padding: 30px 0; /* Increased padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for better readability */
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li{
+    margin-bottom: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
   .jumbotron {
-    display: flex;
-    align-items: center;
-    background-image: url('/Public/resources/images/iStock-1327449500.jpg');
-    background-size: cover;
-    color: #ffffff;
-    height: 400px;
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add more padding */
   }
-  
+
   .jumbotron h2 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
+    font-size: 2.5rem;
   }
-  
-  .jumbotron h3 {
-    margin: 0 0 20px;
-    color: #fff;
-  }
-  
-  section .row img {
-    margin: 0 0 30px;
-    width: 100%;
-  }
-  
-  .col-md-6 {
-    margin: 0 0 30px;
-  }
-  
-  .btn.btn-primary {
-    border-radius: 2px;
-    border: 0px;
-    color: #fbd1d5;
-    background-color: #ffffff;
-  }
-  
-  .btn.btn-primary:hover {
-    color: #ffffff;
-    background-color: #fbd1d5;
-  }
-  
-  .btn-secondary {
-    background-color: #2a70e0;
-    color: #ffffff;
-    margin: 0 0 30px;
-  }
-  
+
   .portrait {
-    width:  350px;
-    height: 300px;
-  }
-  
-  figure img {
     width: 100%;
     height: auto;
   }
-  
-  figure {
-    margin-bottom: 30px;
+
+  header .row,
+  footer .row {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  footer {
-    font-size: 12px;
-    padding: 20px 0;
+  nav {
+    justify-content: center;
+    margin-top: 10px;
   }
-  
-  footer .col-sm-8 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  footer ul {
-    list-style: none;
-  }
-  
+}
+
+
+
+
+
