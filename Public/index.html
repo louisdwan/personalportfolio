@@ -17,7 +17,6 @@
                 <div class="col-md-8">
                     <nav>
                       <a href="index.html" class="mx-2">Home</a>
-                      <a href="about.html" class="mx-2">About Me</a>
                       <a href="education.html" class="mx-2">Education</a>
                       <a href="experience.html" class="mx-2">Experience</a>
                     </nav>
@@ -30,26 +29,33 @@
         <div class="container">
             <h2>Hello, I'm Louis</h2>
             <h3>BSA / Project Manager</h3>
-            <button class="btn btn-primary">Contact me</button>
+            <button class="btn btn-primary" onclick="scrollToFooter()">Contact me</button>
         </div>
     </section>
 
     <section>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                  <h2>About me</h2>
-                  <p>ERP Implementation, Optimizing System Performance, Strategy</p>
-                  <button class="btn btn-secondary">Learn More</button>
-              </div>
-              <div class="col-md-6">
-                  <figure class="portrait-container">
-                      <img src="./resources/images/profilepic.JPEG" alt="Portrait" class="portrait img-fluid">
-                  </figure>
-              </div>
-          </div>
-      </div>
-  </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>
+                      I'm a Business Systems Analyst and Project Manager with a passion for leveraging technology to drive efficiency and innovation within organizations. 
+                      My background is rooted in finance and information systems, and I've had the opportunity to work on diverse projects across several industries.
+                    </p>
+                    <p>
+                      My career has been focused on optimizing business processes and implementing enterprise solutions. I have experience working with platforms like 
+                      NetSuite, Coupa, and Oracle Financials, and I've led projects that have streamlined operations across Supply Chain, Procure-to-Pay, and other 
+                      core financial functions. I am always eager to connect and discuss new opportunities.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <figure class="portrait-container">
+                        <img src="./resources/images/profilepic.JPEG" alt="Portrait" class="portrait img-fluid">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section>
@@ -58,41 +64,53 @@
             <div class="row">
                 <div class="col-md-4">
                     <figure>
-                        <img src="./resources/images/floorspaceestimate.jpg" alt="Project 1">
+                        <a href="https://github.com/louisdwan/floor-space-estimation" target="_blank">
+                        <img src="./resources/images/floorspaceestimate.jpg" alt="Project 1" class="img-fluid">
+                        </a>
                         <figcaption>Floor Space Estimator</figcaption>
                     </figure>
                 </div>
                 <div class="col-md-4">
                     <figure>
-                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
-                        <figcaption>Project 2 Description</figcaption>
+                        <img src="./resources/images/books.jpg" alt="Project 2" class="img-fluid">
+                        <figcaption>PotatoBooks - Individual Contributor Novels</figcaption>
                     </figure>
                 </div>
                 <div class="col-md-4">
                     <figure>
-                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
-                        <figcaption>Project 3 Description</figcaption>
+                        <img src="./resources/images/lawnmower.jpg" alt="Project 3" class="img-fluid">
+                        <figcaption>Lawny - Automatic Lawnmower Rental</figcaption>
                     </figure>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <p>&copy; 2023 Louis</p>
-                </div>
-                <div class="col-sm-8">
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <p>&copy; 2025 Louis Dwan</p>
+            </div>
+            <div class="col-sm-8">
+                <div class="d-flex justify-content-end">
+                    <a href="https://github.com/louisdwan" target="_blank" class="mx-2">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="30" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com/in/louis-dwan-7a37195a/" target="_blank" class="mx-2">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+<script>
+  function scrollToFooter() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
