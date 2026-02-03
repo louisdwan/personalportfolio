@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Louis Dwan — Business Systems Analyst & Project Manager specializing in NetSuite, Procure-to-Pay, and enterprise automation.">
+    <meta property="og:title" content="Louis Dwan | BSA & PM">
+    <meta property="og:description" content="Driving efficiency through NetSuite, Coupa, and Oracle Financials implementations. View projects and connect.">
+    <meta property="og:image" content="./resources/images/profilepic.JPEG">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.example/index.html">
     <title>Louis' Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
@@ -16,20 +25,25 @@
                 </div>
                 <div class="col-md-8">
                     <nav>
-                      <a href="index.html" class="mx-2">Home</a>
+                      <a href="index.html" class="mx-2 active">Home</a>
                       <a href="education.html" class="mx-2">Education</a>
                       <a href="experience.html" class="mx-2">Experience</a>
-                    </nav>
-                </div>
+                      <a href="#contact" class="mx-2">Contact</a>
+                </nav>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <section class="jumbotron">
         <div class="container">
             <h2>Hello, I'm Louis</h2>
             <h3>BSA / Project Manager</h3>
-            <button class="btn btn-primary" onclick="scrollToFooter()">Contact me</button>
+            <p>I help finance and operations teams launch reliable ERP and P2P solutions—from NetSuite deployments to Coupa integrations—while keeping projects on time and stakeholders aligned.</p>
+            <div class="contact-actions mt-3">
+              <a class="btn btn-primary" href="#contact">Contact me</a>
+              <a class="btn btn-outline-light" href="experience.html">See experience</a>
+            </div>
         </div>
     </section>
 
@@ -63,24 +77,55 @@
         <div class="container">
             <h2>My Projects</h2>
             <div class="project-row">
-                <figure>
+                <div class="project-card">
                     <a href="https://github.com/louisdwan/floor-space-estimation" target="_blank">
-                        <img src="./resources/images/floorspaceestimate.jpg" alt="Project 1" class="project-img img-fluid">
+                        <img src="./resources/images/floorspaceestimate.jpg" alt="Floor space estimator screenshot" class="project-img img-fluid" loading="lazy">
                     </a>
-                    <figcaption>Floor Space Estimator</figcaption>
-                </figure>
-                <figure>
+                    <div>
+                        <h4>Floor Space Estimator</h4>
+                        <p class="project-meta">Python + Pandas model that sizes commercial office layouts and outputs utilization dashboards.</p>
+                        <span class="badge-pill">Data modeling</span>
+                    </div>
+                </div>
+                <div class="project-card">
                     <a href="https://github.com/louisdwan/Potato_Books" target="_blank">
-                        <img src="./resources/images/books.jpg" alt="Project 2" class="project-img img-fluid">
+                        <img src="./resources/images/books.jpg" alt="PotatoBooks cover collage" class="project-img img-fluid" loading="lazy">
                     </a>
-                    <figcaption>PotatoBooks - Individual Contributor Novels</figcaption>
-                </figure>
-                <figure>
+                    <div>
+                        <h4>PotatoBooks</h4>
+                        <p class="project-meta">Full-stack catalog for independent authors; supports submissions, reviews, and payments.</p>
+                        <span class="badge-pill">Product ops</span>
+                    </div>
+                </div>
+                <div class="project-card">
                     <a href="https://github.com/louisdwan/lawnTech" target="_blank">
-                        <img src="./resources/images/lawnmower.jpg" alt="Project 3" class="project-img img-fluid">
+                        <img src="./resources/images/lawnmower.jpg" alt="LawnTech mower" class="project-img img-fluid" loading="lazy">
                     </a>
-                    <figcaption>LawnTech - Automatic Lawnmower Rental</figcaption>
-                </figure>
+                    <div>
+                        <h4>LawnTech Rentals</h4>
+                        <p class="project-meta">Scheduling and billing prototype for autonomous mower rentals; built to test service-market fit.</p>
+                        <span class="badge-pill">Service design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="contact-card d-flex flex-column flex-md-row align-items-start justify-content-between gap-3">
+                        <div>
+                            <h2>Let’s work together</h2>
+                            <p class="project-meta">Looking for help with NetSuite, Coupa, or cross-functional delivery? I’m open to consulting and full-time opportunities.</p>
+                        </div>
+                        <div class="contact-actions">
+                            <a class="btn btn-primary" href="mailto:louisdwan@hotmail.com?subject=Hello%20Louis">Email me</a>
+                            <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/louis-dwan-7a37195a/" target="_blank">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
