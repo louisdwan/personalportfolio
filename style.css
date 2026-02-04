@@ -213,6 +213,65 @@ figure {
   margin-bottom: 30px;
 }
 
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 8px;
+}
+
+.edu-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 18px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.edu-card figure {
+  margin: 0;
+}
+
+.edu-card img {
+  border-radius: var(--radius);
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.18);
+}
+
+.edu-meta {
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+.edu-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.edu-degree {
+  margin: 2px 0 0;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.edu-card ul {
+  margin: 8px 0 12px 18px;
+  padding: 0;
+}
+
+.edu-card li {
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
 /* Footer */
 footer {
   font-size: 1rem;
